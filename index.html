@@ -60,6 +60,10 @@ body{
 }
 body.fa{font-family:var(--fa);}
 body.fa .mono, body.fa .ch-label{font-family:var(--mono);}
+body.fa h1, body.fa h2, body.fa h3,
+body.fa .stat b, body.fa .mobile-menu a, body.fa .contact-wrap a.big, body.fa .feat-title{
+  font-family:var(--fa); font-weight:700;
+}
 
 /* ---- trace background ---- */
 .trace-wrap{position:fixed; top:0; left:0; width:100%; height:100%; z-index:-1; opacity:0.5;}
@@ -132,7 +136,7 @@ section{padding:90px 6vw; max-width:1100px; margin:0 auto; border-top:1px solid 
 h2{font-family:var(--serif); font-weight:500; font-size:clamp(1.8rem,3.5vw,2.6rem); margin-bottom:36px; max-width:20ch;}
 
 /* ---- about ---- */
-.about-grid{display:grid; grid-template-columns:0.85fr 1.3fr 1fr; gap:44px;}
+.about-grid{display:grid; grid-template-columns:0.85fr 1.3fr 1fr; gap:44px; align-items:start;}
 .about-grid p{margin-bottom:18px; opacity:0.85;}
 .about-photo{width:100%; aspect-ratio:3/4; object-fit:cover; border:1px solid var(--line); filter:grayscale(0.06) contrast(1.02);}
 .about-photo-wrap{position:relative;}
@@ -193,6 +197,7 @@ body.fa .tl-item ul{padding-left:0; padding-right:18px;}
 /* ---- contact ---- */
 .contact-wrap{display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:30px;}
 .contact-wrap a.big{font-family:var(--serif); font-size:clamp(1.6rem,4vw,2.6rem); color:var(--ink); text-decoration:none; border-bottom:2px solid var(--teal);}
+.feat-title{font-family:var(--serif); font-weight:500; font-size:1.5rem;}
 .social-list{display:flex; gap:20px; font-family:var(--mono); font-size:13px;}
 .social-list a{color:var(--ink); text-decoration:none; opacity:0.78;}
 .social-list a:hover{opacity:1; color:var(--teal);}
@@ -334,8 +339,8 @@ body.fa [data-lang="fa"].inline{display:inline;}
     <div>
       <span class="ch-label" style="margin-bottom:8px;" data-lang="en">FEATURED — Two years in the making</span>
       <span class="ch-label" style="margin-bottom:8px;" data-lang="fa">پروژه‌ی محوری — دو سال کار</span>
-      <h3 style="font-family:var(--serif); font-weight:500; font-size:1.5rem;" data-lang="en">Ancestra-Echo: simulating how the immune system evolves.</h3>
-      <h3 style="font-family:var(--serif); font-weight:500; font-size:1.5rem;" data-lang="fa">Ancestra-Echo: شبیه‌سازی تکامل سیستم ایمنی بدن.</h3>
+      <h3 class="feat-title" data-lang="en">Ancestra-Echo: simulating how the immune system evolves.</h3>
+      <h3 class="feat-title" data-lang="fa">Ancestra-Echo: شبیه‌سازی تکامل سیستم ایمنی بدن.</h3>
     </div>
     <a class="btn primary" href="blog/ancestra-echo.html" data-lang="en">Read the full story →</a>
     <a class="btn primary" href="blog/ancestra-echo.html" data-lang="fa">مطالعه‌ی داستان کامل ←</a>
