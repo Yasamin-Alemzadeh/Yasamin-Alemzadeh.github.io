@@ -32,6 +32,7 @@
   --teal-dim:#0EA9A122;
   --amber:#F2A93B;
   --line:#10151A22;
+  --paper-rgb:241,244,242;
   --serif:'Newsreader', serif;
   --sans:'Inter', sans-serif;
   --mono:'IBM Plex Mono', monospace;
@@ -41,6 +42,7 @@ html[data-theme="dark"]{
   --ink:#ECEFEE;
   --paper:#0B0F12;
   --paper-dim:#151B1F;
+  --paper-rgb:11,15,18;
   --teal:#1FD6CB;
   --teal-dim:#1FD6CB22;
   --amber:#F5BE5C;
@@ -68,7 +70,7 @@ header{
   position:sticky; top:0; z-index:50;
   display:flex; justify-content:space-between; align-items:center;
   padding:18px 6vw;
-  background:rgba(241,244,242,0.85);
+  background:rgba(var(--paper-rgb),0.85);
   backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line);
 }
